@@ -1,0 +1,20 @@
+Без консольного окна (для фонового запуска из веб-сервера)
+go build -ldflags="-H windowsgui" -o temp_helper.exe temp_helper.go
+
+С консолью (для отладки и тестов)
+go build -o temp_helper.exe temp_helper.go
+
+Основной EXE без консольного окна (для запуска в фоне / автозагрузки)
+go build -ldflags="-H windowsgui" -o PCparamWEB.exe main.go server.go config.go
+
+Основной EXE с консолью (если нужно видеть логи веб-сервера в реальном времени при отладке)
+go build -o PCparamWEB.exe main.go server.go config.go
+
+
+
+
+
+
+Если проект разрастется и захочется совсем убрать лишний вес из бинарника и закрыть отладочные символы, можно добавить флаг -s -w:
+go build -ldflags="-s -w -H windowsgui" -o PCparamWEB.exe main.go server.go config.go
+
