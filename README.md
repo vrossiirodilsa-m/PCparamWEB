@@ -14,6 +14,6 @@ PCparamWEB: Lightweight Windows Hardware Monitor Высокопроизводи�
 Убедитесь, что утилита и веб-сервер запускаются с соответствующими привилегиями.
 
 🚀 Быстрый старт
-Поместите исполняемые файлы (PCparamWEB.exe, temp_helper.exe) вместе с драйверами WinRing0x64.dll и WinRing0x64.sys в одну директорию.
+Поместите исполняемые файлы (PCparamWEB.exe, temp_helper.exe) вместе с драйверами WinRing0x64.dll и WinRing0x64.sys в одну директорию. Они есть в архиве install.rar
 Запустите приложение от имени Администратора.
 Откройте в браузере http://localhost:8080 (или ваш настроенный порт).
